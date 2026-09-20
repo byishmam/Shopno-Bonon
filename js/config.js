@@ -23,27 +23,27 @@ window.SITE = {
 
   /* EDIT: contact details */
   contact: {
-    email: "hello@shopnobonon.org",
-    phone: "+880 1XXX XXXXXX",
+    email: "willbe added later",
+    phone: "will be added later",
     address: { bn: "চট্টগ্রাম, বাংলাদেশ", en: "Chattogram, Bangladesh" }
   },
 
   /* EDIT: social links. Leave a value empty ("") to hide that icon. */
   social: {
-    facebook:  "https://facebook.com/",
-    instagram: "https://instagram.com/",
-    youtube:   "https://youtube.com/",
-    linkedin:  "https://linkedin.com/",
-    x:         "https://x.com/",
-    email:     "mailto:hello@shopnobonon.org"
+    facebook:  "https://www.facebook.com/shopno.bononn/",
+    instagram: "#",
+    youtube:   "#",
+    linkedin:  "https://www.linkedin.com/company/shopno-bonon/",
+    x:         "#",
+    email:     "mailto:#"
   },
 
   /* EDIT: main navigation (file = page filename, bn/en = link label) */
   nav: [
     { file: "index.html",      bn: "হোম",      en: "Home" },
-    { file: "about.html",      bn: "আমাদের কথা", en: "About" },
-    { file: "philosophy.html", bn: "দর্শন",     en: "Explore" },
-    { file: "articles.html",   bn: "লেখা",      en: "Articles" },
+    { file: "about.html",      bn: "আমাদের সম্পর্কে", en: "About" },
+    { file: "philosophy.html", bn: "এক্সপ্লোর",     en: "Explore" },
+    { file: "articles.html",   bn: "সব লেখা",      en: "Articles" },
     { file: "team.html",       bn: "টিম",       en: "Team" },
     { file: "contact.html",    bn: "যোগাযোগ",   en: "Contact" }
   ],
