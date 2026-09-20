@@ -415,7 +415,7 @@ html[data-lang="en"] [data-lang-block="bn"] { display: none !important; }
   transition: transform .45s var(--ease-out), opacity .35s var(--ease-out);
 }
 .modal-backdrop.open .modal { transform: none; opacity: 1; }
-.modal-cover { height: 118px; background: linear-gradient(120deg, var(--accent) 0%, var(--text-primary) 100%); opacity: .9; }
+.modal-cover { height: 70px;  var(--text-primary) 100%; }
 .modal-head { padding: 0 28px; margin-top: -48px; }
 .modal-head img { border: 4px solid var(--bg-elevated); box-shadow: var(--shadow); }
 .modal-body { padding: 16px 28px 28px; }
