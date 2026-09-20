@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bn" data-lang="bn" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- EDIT: page title and description (SEO) -->
+<title>লেখা · Articles — স্বপ্নবুনন Shopno Bonon</title>
+<meta name="description" content="Read student writing on debate, public speaking, creative writing, storytelling, student life and social awareness.">
+<meta name="theme-color" content="#FBFAF8">
+<link rel="canonical" href="./articles.html">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="লেখা · Articles — স্বপ্নবুনন Shopno Bonon">
+<meta property="og:description" content="Read student writing on debate, public speaking, creative writing, storytelling, student life and social awareness.">
+<meta property="og:image" content="assets/images/og-image.svg">
+<meta property="og:site_name" content="Shopno Bonon">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+
+<!-- Bangla typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- Applies the saved theme + language before the page paints (no flash) -->
+<script>
+(function(){try{
+  var t=localStorage.getItem('sb-theme')||'system';
+  var dark=t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+  var l=localStorage.getItem('sb-lang')||'bn';
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.setAttribute('lang',l);
+}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-bn="মূল কনটেন্টে যান" data-en="Skip to content">মূল কনটেন্টে যান</a>
+
+<!-- Header is built by js/main.js from js/config.js -->
+<header id="site-header"></header>
+
+<main id="main">
+<section class="page-head">
+  <div class="container">
+    
+    <h1 data-reveal>
+      <span data-lang-block="bn">লেখা</span>
+      <span data-lang-block="en">Articles</span>
+    </h1>
+    <p class="lede" data-reveal>
+      <span data-lang-block="bn">বিতর্ক, পাবলিক স্পিকিং, লেখা, শিক্ষার্থী জীবন ও সামাজিক সচেতনতা নিয়ে শিক্ষার্থীদের লেখা।</span>
+      <span data-lang-block="en">Student writing on debate, speaking, storytelling, campus life and social awareness.</span>
+    </p>
+  </div>
+</section>
+<section class="section--tight">
+  <div class="container">
+    <div class="filter-bar" style="margin-bottom:12px">
+      <div class="filter-bar" id="filter-bar" role="group" data-bn-aria="বিষয় বেছে নিন" data-en-aria="Filter by topic"></div>
+    </div>
+    <div class="filter-bar" style="margin-bottom:34px">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="m16 16 4.5 4.5"/></svg>
+        <input type="search" id="article-search" data-i18n-aria="searchLabel"
+               data-bn-placeholder="শিরোনাম, বিষয় বা লেখক…" data-en-placeholder="Title, topic or author…">
+      </div>
+    </div>
+    <div class="grid grid-3" id="archive-grid"></div>
+    <p class="empty-state" id="empty-state" hidden></p>
+  </div>
+</section>
+<div style="height:40px"></div>
+
+</main>
+
+<!-- Footer is built by js/main.js from js/config.js -->
+<footer id="site-footer"></footer>
+
+<script src="js/config.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/language.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/articles.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* ============================================================
+   animations.css — scroll reveals, hero sequence, micro motion
+   All motion is disabled automatically when the visitor has
+   "reduce motion" turned on (see the last block of this file).
+   ============================================================ */
+
+/* ---------- Scroll reveal (used by js/main.js) -------------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity .85s var(--ease-out),
+    transform .85s var(--ease-out),
+    filter .85s var(--ease-out);
+  filter: blur(6px);
+  will-change: opacity, transform;
+}
+[data-reveal="fade"] { transform: none; }
+[data-reveal="left"] { transform: translateX(-26px); }
+[data-reveal="scale"] { transform: scale(.97); }
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+/* staggered children: add data-reveal-group on the parent */
+[data-reveal-group] > * {
+  opacity: 0; transform: translateY(20px); filter: blur(5px);
+  transition: opacity .8s var(--ease-out), transform .8s var(--ease-out), filter .8s var(--ease-out);
+}
+[data-reveal-group].is-visible > * { opacity: 1; transform: none; filter: blur(0); }
+[data-reveal-group].is-visible > *:nth-child(1) { transition-delay: .00s; }
+[data-reveal-group].is-visible > *:nth-child(2) { transition-delay: .07s; }
+[data-reveal-group].is-visible > *:nth-child(3) { transition-delay: .14s; }
+[data-reveal-group].is-visible > *:nth-child(4) { transition-delay: .21s; }
+[data-reveal-group].is-visible > *:nth-child(5) { transition-delay: .28s; }
+[data-reveal-group].is-visible > *:nth-child(6) { transition-delay: .35s; }
+[data-reveal-group].is-visible > *:nth-child(7) { transition-delay: .42s; }
+[data-reveal-group].is-visible > *:nth-child(8) { transition-delay: .49s; }
+
+/* ---------- Image mask reveal ------------------------------- */
+.mask-reveal { clip-path: inset(0 0 100% 0); transition: clip-path 1.1s var(--ease-out); }
+.mask-reveal.is-visible { clip-path: inset(0 0 0 0); }
+
+/* ---------- Hero load sequence (one orchestrated moment) ---- */
+.hero-line { display: block; overflow: hidden; }
+.hero-line > span {
+  display: block;
+  transform: translateY(105%);
+  animation: lineUp 1.05s var(--ease-out) forwards;
+}
+.hero-line:nth-of-type(1) > span { animation-delay: .10s; }
+.hero-line:nth-of-type(2) > span { animation-delay: .20s; }
+@keyframes lineUp { to { transform: translateY(0); } }
+
+.hero-fade { opacity: 0; animation: heroFade .95s var(--ease-out) forwards; }
+.hero-kicker.hero-fade { animation-delay: .05s; }
+.hero-sub.hero-fade { animation-delay: .42s; }
+.hero-actions.hero-fade { animation-delay: .54s; }
+.motto.hero-fade { animation-delay: .66s; }
+@keyframes heroFade {
+  from { opacity: 0; transform: translateY(16px); filter: blur(7px); }
+  to   { opacity: 1; transform: none; filter: blur(0); }
+}
+
+/* Hero weave lines draw themselves once */
+.weave path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: draw 2.6s var(--ease-out) forwards;
+}
+.weave path:nth-child(2) { animation-delay: .18s; }
+.weave path:nth-child(3) { animation-delay: .36s; }
+.weave path:nth-child(4) { animation-delay: .54s; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+/* ---------- Parallax helper (js adds --p) ------------------- */
+[data-parallax] { will-change: transform; transform: translate3d(0, var(--p, 0px), 0); }
+
+/* ---------- Mobile nav item stagger ------------------------- */
+.mobile-nav.open li:nth-child(1) { transition-delay: .06s; }
+.mobile-nav.open li:nth-child(2) { transition-delay: .11s; }
+.mobile-nav.open li:nth-child(3) { transition-delay: .16s; }
+.mobile-nav.open li:nth-child(4) { transition-delay: .21s; }
+.mobile-nav.open li:nth-child(5) { transition-delay: .26s; }
+.mobile-nav.open li:nth-child(6) { transition-delay: .31s; }
+.mobile-nav.open li:nth-child(7) { transition-delay: .36s; }
+
+/* ---------- Low-power / reduced motion ---------------------- */
+html.reduce-motion * ,
+html.low-power * {
+  animation-duration: .001ms !important;
+  animation-delay: 0ms !important;
+  transition-duration: .12s !important;
+}
+html.reduce-motion [data-reveal],
+html.reduce-motion [data-reveal-group] > *,
+html.low-power [data-reveal],
+html.low-power [data-reveal-group] > * {
+  opacity: 1 !important; transform: none !important; filter: none !important;
+}
+html.reduce-motion .mask-reveal { clip-path: none !important; }
+html.reduce-motion .hero-line > span { transform: none !important; }
+html.reduce-motion .hero-fade { opacity: 1 !important; }
+html.reduce-motion .weave path { stroke-dashoffset: 0 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .12s !important;
+  }
+  [data-reveal], [data-reveal-group] > * { opacity: 1 !important; transform: none !important; filter: none !important; }
+  .hero-line > span { transform: none !important; }
+  .hero-fade { opacity: 1 !important; }
+  .mask-reveal { clip-path: none !important; }
+  .weave path { stroke-dashoffset: 0 !important; }
+}
