@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Article cover">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E7E3F7"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".65"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g1)"/>
+  <g fill="none" stroke="#3A2EDB" stroke-opacity=".5" stroke-width="2">
+    <path d="M-40 187 C 260 116, 440 258, 700 152 S 1000 258, 1240 164"/>
+    <path d="M-40 239 C 260 163, 440 315, 700 201 S 1000 315, 1240 214"/>
+    <path d="M-40 291 C 260 210, 440 372, 700 251 S 1000 372, 1240 264"/>
+    <path d="M-40 343 C 260 257, 440 429, 700 300 S 1000 429, 1240 315"/>
+    <path d="M-40 395 C 260 304, 440 486, 700 350 S 1000 486, 1240 365"/>
+    <path d="M-40 447 C 260 351, 440 543, 700 399 S 1000 543, 1240 415"/>
+    <path d="M-40 499 C 260 398, 440 600, 700 449 S 1000 600, 1240 466"/>
+    <path d="M-40 551 C 260 445, 440 657, 700 498 S 1000 657, 1240 516"/>
+    <path d="M-40 603 C 260 492, 440 714, 700 548 S 1000 714, 1240 566"/>
+  </g>
+  <circle cx="340" cy="240" r="87" fill="#3A2EDB" fill-opacity=".14"/>
+  <circle cx="340" cy="240" r="9" fill="#3A2EDB" fill-opacity=".55"/>
+</svg>

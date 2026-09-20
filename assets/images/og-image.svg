@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Shopno Bonon">
+  <rect width="1200" height="630" fill="#FBFAF8"/>
+  <g fill="none" stroke="#3A2EDB" stroke-opacity=".35" stroke-width="2">
+    <path d="M-40 470 C 220 380, 420 520, 700 400 S 1050 300, 1260 360"/>
+    <path d="M-40 510 C 240 430, 440 560, 720 445 S 1060 350, 1260 405"/>
+    <path d="M-40 550 C 260 480, 460 600, 740 490 S 1070 400, 1260 450"/>
+  </g>
+  <text x="80" y="250" font-family="Helvetica, Arial, sans-serif" font-size="96" font-weight="700" fill="#16171A">Shopno Bonon</text>
+  <text x="80" y="320" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#5C5F66">Mess with the best, Rest like death.</text>
+</svg>

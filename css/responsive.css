@@ -1,0 +1,108 @@
+/* ============================================================
+   responsive.css — breakpoints
+   Large desktop 1440+ | Desktop 1180 | Laptop 1024
+   Tablet 860 | Mobile 640 | Small mobile 380
+   ============================================================ */
+
+/* ---------- Large desktop ---------------------------------- */
+@media (min-width: 1440px) {
+  :root { --maxw: 1280px; --gutter: 32px; }
+  .prose { font-size: 1.13rem; }
+}
+
+/* ---------- Laptop ----------------------------------------- */
+@media (max-width: 1080px) {
+  .grid-4 { grid-template-columns: repeat(3, 1fr); }
+  .footer-top { grid-template-columns: 1.5fr 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* ---------- Tablet ----------------------------------------- */
+@media (max-width: 900px) {
+  :root { --nav-h: 62px; }
+
+  /* Desktop nav → hamburger */
+  .nav-links { display: none; }
+  .menu-toggle { display: inline-flex; }
+
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .featured { grid-template-columns: 1fr; }
+  .featured .card-media { aspect-ratio: 16/10; }
+  .problem { grid-template-columns: 1fr; gap: 8px; padding: 22px 0; }
+  .value-row { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
+  .search-box { margin-left: 0; width: 100%; }
+  .filter-bar { gap: 8px; }
+  .team-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px; }
+}
+
+/* ---------- Mobile ----------------------------------------- */
+@media (max-width: 640px) {
+  :root {
+    --gutter: 20px;
+    --fs-body: 1rem;
+    --radius-l: 20px;
+  }
+
+  .hero { padding-top: calc(var(--nav-h) + 44px); padding-bottom: 44px; }
+  .display { max-width: 100%; letter-spacing: -.035em; }
+  .hero-actions { gap: 10px; }
+  .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
+  .motto { margin-top: 38px; }
+
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .grid { gap: 20px; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .member-body { padding: 14px 15px 16px; }
+  .member-bio { display: none; }          /* keep mobile cards compact */
+  .skill-grid { grid-template-columns: repeat(2, 1fr); }
+  .skill { min-height: 132px; padding: 20px 16px; }
+
+  .card-body { padding: 17px 18px 19px; }
+  .article-hero { margin: 26px 0 32px; border-radius: var(--radius-m); }
+  .prose { font-size: 1.04rem; }
+  .prose blockquote { font-size: 1.1rem; padding-left: 16px; }
+  .author-box { flex-direction: column; gap: 14px; }
+
+  /* Buttons stay thumb-friendly */
+  .btn { padding: 13px 20px; }
+  .icon-btn { width: 40px; height: 40px; }
+
+  /* Modal becomes a bottom sheet */
+  .modal-backdrop { padding: 0; align-items: flex-end; }
+  .modal {
+    width: 100%; max-height: 92vh; border-radius: 26px 26px 0 0;
+    transform: translateY(40px); border-bottom: 0;
+  }
+  .modal-backdrop.open .modal { transform: none; }
+  .modal-cover { height: 96px; }
+  .modal-head { padding-inline: 20px; }
+  .modal-body { padding: 14px 20px 30px; }
+
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; gap: 6px; }
+
+  .mobile-nav a { font-size: 1.2rem; padding: 14px 2px; }
+}
+
+/* ---------- Small mobile ----------------------------------- */
+@media (max-width: 380px) {
+  :root { --gutter: 16px; }
+  .team-grid { grid-template-columns: 1fr; }
+  .skill-grid { grid-template-columns: 1fr; }
+  .brand-name { font-size: .95rem; }
+  .hero-kicker { font-size: .75rem; }
+}
+
+/* ---------- Landscape phones ------------------------------- */
+@media (max-height: 480px) and (orientation: landscape) {
+  .mobile-nav { padding-top: calc(var(--nav-h) + 10px); overflow-y: auto; }
+  .mobile-nav a { padding: 10px 2px; font-size: 1.05rem; }
+}
+
+/* ---------- Print ------------------------------------------ */
+@media print {
+  .site-header, .mobile-nav, .site-footer, .modal-backdrop, body::after { display: none !important; }
+  body { background: #fff; color: #000; }
+  [data-reveal], [data-reveal-group] > * { opacity: 1 !important; transform: none !important; filter: none !important; }
+}
