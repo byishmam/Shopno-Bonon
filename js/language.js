@@ -49,7 +49,7 @@
   };
 
   const STORAGE_KEY = "sb-lang";
-  let current = "bn"; /* EDIT: default language — "bn" or "en" */
+  let current = "en"; /* EDIT: default language — "bn" or "en" */
 
   function t(key) {
     const item = UI[key];
