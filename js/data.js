@@ -25,15 +25,15 @@ window.AUTHORS = {
     role:  { bn: "সম্পাদক ও বিতর্ক প্রশিক্ষক", en: "Editor & Debate Coach" },
     photo: "assets/images/avatar-1.png",          /* EDIT: author photo */
     bio: {
-      bn: "সাত বছর ধরে আন্তঃবিশ্ববিদ্যালয় বিতর্কে যুক্ত। এখন স্কুল-কলেজের শিক্ষার্থীদের যুক্তি সাজাতে আর মঞ্চে দাঁড়াতে শেখান।",
-      en: "Seven years in inter-university debate. Now she teaches school and college students how to build an argument and hold a stage."
+      bn: "সাত বছর ধরে বিতর্কে যুক্ত। এখন স্কুল-কলেজের শিক্ষার্থীদের যুক্তি সাজাতে আর মঞ্চে দাঁড়াতে শেখান।",
+      en: "Seven years in debate. Now he teaches school and college students how to build an argument and hold a stage."
     },
     quote: {
-      bn: "যুক্তি শেখা মানে তর্ক জেতা নয়—নিজের ভাবনাকে সৎভাবে যাচাই করতে শেখা।",
+      bn: "যুক্তি শেখা মানে তর্ক জেতা নয়, নিজের ভাবনাকে সৎভাবে যাচাই করতে শেখা।",
       en: "Learning to argue is not learning to win. It is learning to test your own thinking honestly."
     },
     expertise: { bn: ["বিতর্ক", "পাবলিক স্পিকিং", "সম্পাদনা"], en: ["Debate", "Public speaking", "Editing"] },
-    achievement: { bn: "জাতীয় বিতর্ক উৎসব ২০২৪-এ বিচারক", en: "Adjudicator, National Debate Festival 2024" },
+    achievement: { bn: "জাতীয় বিতর্ক উৎসব ২০২৪-এ বিচারক", en: "Winner, Legal Tech Hackathon 2026" },
     social: { facebook: "https://www.facebook.com/rihhal.ishmam/", linkedin: "https://www.linkedin.com/in/byishmam/", email: "mailto:ishmam.on@gmail.com" }
   },
 
