@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- EDIT: page title and description (SEO) -->
+<title>Meet our team · Shopno Bonon</title>
+<meta name="description" content="The students, writers, debaters and designers behind Shopno Bonon.">
+<meta name="theme-color" content="#FBFAF8">
+<link rel="canonical" href="./team.html">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="আমাদের টিম · Team — স্বপ্নবুনন Shopno Bonon">
+<meta property="og:description" content="The students, writers, debaters and designers behind Shopno Bonon.">
+<meta property="og:image" content="assets/images/og-image.svg">
+<meta property="og:site_name" content="Shopno Bonon">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+
+<!-- Bangla typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- Applies the saved theme + language before the page paints (no flash) -->
+<script>
+(function(){try{
+  var t=localStorage.getItem('sb-theme')||'system';
+  var dark=t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+  var l=localStorage.getItem('sb-lang')||'en';
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.setAttribute('lang',l);
+}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-bn="মূল কনটেন্টে যান" data-en="Skip to content">Skip to content</a>
+
+<!-- Header is built by js/main.js from js/config.js -->
+<header id="site-header"></header>
+
+<main id="main">
+<section class="page-head">
+  <div class="container">
+    
+    <h1 data-reveal>
+      <span data-lang-block="bn">আমাদের টিমের সাথে পরিচিত হোন</span>
+      <span data-lang-block="en">Meet our team</span>
+    </h1>
+    <p class="lede" data-reveal>
+      <span data-lang-block="bn">শিক্ষার্থী, লেখক, বিতার্কিক এবং ডিজাইনারদের একটি ছোট দল। সম্পূর্ণ প্রোফাইলের জন্য যেকোনো কার্ডে ট্যাপ করুন।</span>
+      <span data-lang-block="en">A small group of students, writers, debaters and designers. Tap any card for the full profile.</span>
+    </p>
+  </div>
+</section>
+<!-- ============ FOUNDERS ============
+     EDIT the people in js/data.js  ->  window.FOUNDERS
+     The section hides itself automatically if that list is empty. -->
+<section class="section section--tight" data-people-section>
+  <div class="container">
+    <div class="people-head" data-reveal>
+      <h2 class="section-title">
+        <span data-lang-block="bn">প্রতিষ্ঠাতাবৃন্দ</span>
+        <span data-lang-block="en">Founders</span>
+      </h2>
+      <p class="text-secondary">
+        <span data-lang-block="bn">যাঁদের হাত ধরে স্বপ্নবুননের শুরু।</span>
+        <span data-lang-block="en">The people who started Shopno Bonon.</span>
+      </p>
+    </div>
+    <div class="team-grid team-grid--founders" id="founders-grid" data-reveal-group></div>
+  </div>
+</section>
+
+<!-- ============ EXECUTIVE COMMITTEE ============
+     EDIT the people in js/data.js  ->  window.EXECUTIVES
+     EDIT the term label in js/data.js  ->  window.EXEC_TERM -->
+<section class="section section--alt" data-people-section>
+  <div class="container">
+    <div class="people-head" data-reveal>
+      <span class="divider-label" data-exec-term></span>
+      <h2 class="section-title">
+        <span data-lang-block="bn">বর্তমান কার্যকরী কমিটি</span>
+        <span data-lang-block="en">Current Executive Committee</span>
+      </h2>
+      <p class="text-secondary">
+        <span data-lang-block="bn">এই মেয়াদে যাঁরা স্বপ্নবুননের দৈনন্দিন কার্যক্রম পরিচালনা করছেন।</span>
+        <span data-lang-block="en">The committee running Shopno Bonon for the current term.</span>
+      </p>
+    </div>
+    <div class="team-grid" id="exec-grid" data-reveal-group></div>
+  </div>
+</section>
+
+<!-- ============ WIDER TEAM ============
+     EDIT the people in js/data.js  ->  window.TEAM -->
+<section class="section section--tight" data-people-section>
+  <div class="container">
+    <div class="people-head" data-reveal>
+      <h2 class="section-title">
+        <span data-lang-block="bn">আমাদের টিম</span>
+        <span data-lang-block="en">The wider team</span>
+      </h2>
+      <p class="text-secondary">
+        <span data-lang-block="bn">লেখক, ডিজাইনার ও ক্যাম্পাস কন্ট্রিবিউটররা।</span>
+        <span data-lang-block="en">Writers, designers and campus contributors.</span>
+      </p>
+    </div>
+    <div class="team-grid" id="team-grid" data-reveal-group></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-panel" data-reveal="scale">
+      <h2><span data-lang-block="bn">টিমে যুক্ত হতে চান?</span><span data-lang-block="en">Wanna join the team?</span></h2>
+      <p><span data-lang-block="bn">কন্ট্রিবিউটর, লেখক, ডিজাইনার হিসেবে আমাদের সাথে যুক্ত হতে নিচের বাটনে ক্লিক করুন।</span>
+         <span data-lang-block="en">Click the button below to join us as a contributor, writer, or designer.</span></p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn--accent" href="join-us.html" data-bn="আবেদন করুন" data-en="Apply">Apply</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer is built by js/main.js from js/config.js -->
+<footer id="site-footer"></footer>
+
+<script src="js/config.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/language.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/articles.js" defer></script>
+<script src="js/team.js" defer></script>
+</body>
+</html>
