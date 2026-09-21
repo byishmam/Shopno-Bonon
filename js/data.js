@@ -115,14 +115,14 @@ window.TEAM = [
     social: { facebook: "https://www.facebook.com/redwannowshadoffical", instagram: "https://www.instagram.com/dude_redu", linkedin: "", email: "mailto:" }
   },
   {
-    name: { bn: "তাসনিয়া রহমান", en: "Tasnia Rahman" },
-    role: { bn: "কনটেন্ট লিড", en: "Content Lead" },
-    photo: "assets/images/avatar-3.svg",
-    bio: { bn: "সামাজিক সচেতনতা বিভাগের পরিকল্পনা ও তথ্য যাচাই করেন।", en: "Plans and fact-checks the social awareness desk." },
-    quote: { bn: "যা লিখছি, তা আগে যাচাই করি।", en: "Check it first, publish it second." },
-    expertise: { bn: ["গবেষণা", "সম্পাদনা"], en: ["Research", "Editing"] },
-    achievement: { bn: "ক্যাম্পাস অ্যাওয়্যারনেস ক্যাম্পেইন সংগঠক", en: "Organiser, campus awareness campaigns" },
-    social: { facebook: "", instagram: "", linkedin: "https://linkedin.com/", email: "mailto:tasnia@shopnobonon.org" }
+    name: { en: "MD. Ariful Islam Maruf" },
+    role: { en: "Content Lead" },
+    photo: "assets/images/avatar-3.png",
+    bio: { en: "Plans and fact-checks the social awareness desk." },
+    quote: { en: "Check it first, publish it second." },
+    expertise: { en: ["Research", "Editing"] },
+    achievement: { en: "Organiser, campus awareness campaigns" },
+    social: { facebook: "https://www.facebook.com/profile.php?id=61591979730643", instagram: "", linkedin: "https://www.linkedin.com/in/maruf-on/", email: "mailto:" }
   },
   {
     name: { bn: "রাফি চৌধুরী", en: "Rafi Chowdhury" },
