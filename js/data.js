@@ -25,11 +25,11 @@ window.AUTHORS = {
     role:  { bn: "সম্পাদক ও বিতর্ক প্রশিক্ষক", en: "Editor & Debate Coach" },
     photo: "assets/images/avatar-1.png",          /* EDIT: author photo */
     bio: {
-      bn: "সাত বছর ধরে বিতর্কে যুক্ত। এখন স্কুল-কলেজের শিক্ষার্থীদের যুক্তি সাজাতে আর মঞ্চে দাঁড়াতে শেখান।",
-      en: "Seven years in debate. Now he teaches school and college students how to build an argument and hold a stage."
+      bn: "বিতর্ক ও জনবক্তৃতায় সাত বছরের অভিজ্ঞতা। এখন তিনি শিক্ষার্থীদের যুক্তি গঠন করতে এবং মঞ্চে সাবলীলভাবে কথা বলতে প্রশিক্ষণ দেন।",
+      en: "Seven years in debate & Public Speaking. Now he trains students how to build an argument and hold a stage."
     },
     quote: {
-      bn: "যুক্তি শেখা মানে তর্ক জেতা নয়, নিজের ভাবনাকে সৎভাবে যাচাই করতে শেখা।",
+      bn: "তর্ক করতে শেখা মানে জিততে শেখা নয়। এর মানে হলো সততার সাথে নিজের চিন্তাভাবনাকে যাচাই করতে শেখা।",
       en: "Learning to argue is not learning to win. It is learning to test your own thinking honestly."
     },
     expertise: { bn: ["বিতর্ক", "পাবলিক স্পিকিং", "সম্পাদনা"], en: ["Debate", "Public speaking", "Editing"] },
@@ -37,21 +37,21 @@ window.AUTHORS = {
     social: { facebook: "https://www.facebook.com/rihhal.ishmam/", linkedin: "https://www.linkedin.com/in/byishmam/", email: "mailto:ishmam.on@gmail.com" }
   },
 
-  arif: {
-    name:  { bn: "আরিফ হাসান", en: "Arif Hasan" },
-    role:  { bn: "লেখক, স্টোরিটেলিং", en: "Writer, Storytelling" },
-    photo: "assets/images/avatar-2.svg",
+  redu: {
+    name:  { bn: "রেদওয়ান নওশাদ", en: "Redwan Nowshad" },
+    role:  { bn: "রিসার্চার, স্টোরিটেলিং", en: "Researcher, Storytelling" },
+    photo: "assets/images/avatar-2.png",
     bio: {
-      bn: "গল্প বলার মধ্য দিয়ে কঠিন বিষয়কে সহজ করতে পছন্দ করেন। ক্যাম্পাস ম্যাগাজিন দিয়ে লেখালেখির শুরু।",
+      bn: "তিনি কঠিন ধারণাগুলোকে গল্পের মাধ্যমে সহজ করে তুলতে ভালোবাসেন। একটি ক্যাম্পাস ম্যাগাজিনে লেখার মাধ্যমে তাঁর কর্মজীবন শুরু হয়েছিল।",
       en: "He likes making hard ideas simple by telling them as stories. Started out writing for a campus magazine."
     },
     quote: {
-      bn: "তথ্য মানুষ ভুলে যায়, গল্প মনে রাখে।",
+      bn: "মানুষ তথ্য ভুলে যায়। তারা গল্প মনে রাখে।",
       en: "People forget information. They remember a story."
     },
     expertise: { bn: ["স্টোরিটেলিং", "সৃজনশীল লেখা"], en: ["Storytelling", "Creative writing"] },
     achievement: { bn: "৪০+ প্রকাশিত ফিচার", en: "40+ published features" },
-    social: { facebook: "https://facebook.com/", instagram: "https://instagram.com/", email: "mailto:arif@shopnobonon.org" }
+    social: { facebook: "https://www.facebook.com/redwannowshadoffical", instagram: "https://instagram.com/dude_redu", email: "mailto:" }
   },
 
   tasnia: {
@@ -105,14 +105,14 @@ window.TEAM = [
     social: { facebook: "https://www.facebook.com/rihhal.ishmam/", instagram: "", linkedin: "https://www.linkedin.com/in/byishmam/", email: "mailto:ishmam.on@gmail.com" }
   },
   {
-    name: { bn: "আরিফ হাসান", en: "Arif Hasan" },
-    role: { bn: "হেড অফ স্টোরিটেলিং", en: "Head of Storytelling" },
-    photo: "assets/images/avatar-2.svg",
+    name: { en: "Redwan Nowshad" },
+    role: { en: "Researcher, Storytelling" },
+    photo: "assets/images/avatar-2.png",
     bio: { bn: "লেখা ও গল্প বলার কর্মশালা পরিচালনা করেন।", en: "Runs the writing and storytelling workshops." },
     quote: { bn: "ভালো গল্প সবসময় সৎ গল্প।", en: "A good story is an honest one." },
-    expertise: { bn: ["স্টোরিটেলিং", "লেখা"], en: ["Storytelling", "Writing"] },
+    expertise: { bn: ["স্টোরিটেলিং", "রিসার্চ"], en: ["Storytelling", "Research"] },
     achievement: { bn: "৪০+ প্রকাশিত ফিচার", en: "40+ published features" },
-    social: { facebook: "https://facebook.com/", instagram: "https://instagram.com/", linkedin: "", email: "mailto:arif@shopnobonon.org" }
+    social: { facebook: "https://www.facebook.com/redwannowshadoffical", instagram: "https://www.instagram.com/dude_redu", linkedin: "", email: "mailto:" }
   },
   {
     name: { bn: "তাসনিয়া রহমান", en: "Tasnia Rahman" },
