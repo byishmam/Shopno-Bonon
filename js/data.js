@@ -108,10 +108,10 @@ window.TEAM = [
     name: { en: "Redwan Nowshad" },
     role: { en: "Researcher, Storytelling" },
     photo: "assets/images/avatar-2.png",
-    bio: { bn: "লেখা ও গল্প বলার কর্মশালা পরিচালনা করেন।", en: "Runs the writing and storytelling workshops." },
-    quote: { bn: "ভালো গল্প সবসময় সৎ গল্প।", en: "A good story is an honest one." },
-    expertise: { bn: ["স্টোরিটেলিং", "রিসার্চ"], en: ["Storytelling", "Research"] },
-    achievement: { bn: "৪০+ প্রকাশিত ফিচার", en: "40+ published features" },
+    bio: { en: "Runs the writing and storytelling workshops." },
+    quote: { en: "A good story is an honest one." },
+    expertise: { en: ["Storytelling", "Research"] },
+    achievement: {en: "40+ published features" },
     social: { facebook: "https://www.facebook.com/redwannowshadoffical", instagram: "https://www.instagram.com/dude_redu", linkedin: "", email: "mailto:" }
   },
   {
@@ -244,7 +244,7 @@ window.ARTICLES = [
     cover: "assets/images/cover-3.svg",
     date: "2026-05-04",
     readTime: 5,
-    author: "arif",
+    author: "redu",
     title: { bn: "লিখতে পারেন, কিন্তু গল্প বলতে পারেন না?", en: "You can write, but you can't tell the story" },
     excerpt: {
       bn: "গল্প মানে বড় ঘটনা নয়। একটি নির্দিষ্ট মুহূর্ত, একটি পরিবর্তন—ব্যস।",
@@ -340,7 +340,7 @@ window.ARTICLES = [
     cover: "assets/images/cover-6.svg",
     date: "2026-04-02",
     readTime: 6,
-    author: "arif",
+    author: "redu",
     title: { bn: "ভালো বক্তা হওয়ার আগে ভালো শ্রোতা", en: "Before you become a speaker, become a listener" },
     excerpt: {
       bn: "যোগাযোগের অর্ধেকটা বলা, বাকি অর্ধেক শোনা—এবং দ্বিতীয়টাই বেশি কঠিন।",
