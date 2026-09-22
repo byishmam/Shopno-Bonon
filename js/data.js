@@ -374,7 +374,7 @@ window.ARTICLES = [
   {
     id: "argument-structure",
     featured: false,
-    category: "debate",
+    category: "opinion",
     cover: "assets/images/cover-2.png",
     date: "2026-05-11",
     readTime: 6,
