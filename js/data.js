@@ -25,15 +25,15 @@ window.AUTHORS = {
     role:  { bn: "সম্পাদক ও বিতর্ক প্রশিক্ষক", en: "Editor & Debate Coach" },
     photo: "assets/images/avatar-1.png",          /* EDIT: author photo */
     bio: {
-      bn: "বিতর্ক ও জনবক্তৃতায় সাত বছরের অভিজ্ঞতা। এখন তিনি শিক্ষার্থীদের যুক্তি গঠন করতে এবং মঞ্চে সাবলীলভাবে কথা বলতে প্রশিক্ষণ দেন।",
-      en: "Seven years in debate & Public Speaking. Now he trains students how to build an argument and hold a stage."
+      bn: "আন্তর্জাতিক ইসলামী বিশ্ববিদ্যালয়ের একজন স্নাতক আইন শিক্ষার্থী, বিতর্ক ও জনবক্তৃতায় সাত বছরের অভিজ্ঞতা সম্পন্ন তিনি এখন শিক্ষার্থীদের যুক্তি গঠন এবং মঞ্চে সাবলীলভাবে কথা বলার প্রশিক্ষণ দেন।",
+      en: "A undergrad law student at IIUC, with seven years of experience in debate and public speaking, he now trains students in argument formation and speaking fluently on stage."
     },
     quote: {
       bn: "তর্ক করতে শেখা মানে জিততে শেখা নয়। এর মানে হলো সততার সাথে নিজের চিন্তাভাবনাকে যাচাই করতে শেখা।",
       en: "Learning to argue is not learning to win. It is learning to test your own thinking honestly."
     },
-    expertise: { bn: ["বিতর্ক", "পাবলিক স্পিকিং", "সম্পাদনা"], en: ["Debate", "Public speaking", "Editing"] },
-    achievement: { bn: "জাতীয় বিতর্ক উৎসব ২০২৪-এ বিচারক", en: "Winner, Legal Tech Hackathon 2026" },
+    expertise: { bn: ["বিতর্ক", "পাবলিক স্পিকিং", "আর্টিকেল লেখা"], en: ["Debate", "Public speaking", "Article Writing"] },
+    achievement: { bn: "বিজয়ী, লিগ্যাল টেক হ্যাকাথন ২০২৬", en: "Winner, Legal Tech Hackathon 2026" },
     social: { facebook: "https://www.facebook.com/rihhal.ishmam/", linkedin: "https://www.linkedin.com/in/byishmam/", email: "mailto:ishmam.on@gmail.com" }
   },
 
@@ -375,30 +375,72 @@ window.ARTICLES = [
     id: "argument-structure",
     featured: false,
     category: "debate",
-    cover: "assets/images/cover-2.svg",
+    cover: "assets/images/cover-2.png",
     date: "2026-05-11",
     readTime: 6,
     author: "ishmam",
-    title: { bn: "একটি যুক্তি দাঁড় করানোর চারটি স্তম্ভ", en: "The four parts of an argument that holds" },
+    title: { bn: "ন্যায়বিচারের এক ক্লিকে কাছাকাছি: বাংলাদেশে ডিজিটাল আইনি সহায়তার প্রয়োজনীয়তা", en: "One Click Closer to Justice: The Need for Digital Legal Aid in Bangladesh" },
     excerpt: {
-      bn: "দাবি, কারণ, প্রমাণ আর প্রভাব—এই চারটি ঠিক থাকলে যুক্তি সহজে ভাঙে না।",
-      en: "Claim, reason, evidence, impact. Get these right and an argument is hard to break."
+      bn: "মূল ধারণাটি হলো, ডিজিটাল আইনি সহায়তা প্রচলিত আইনি পরিষেবার পরিপূরক হিসেবে কাজ করার পাশাপাশি বাংলাদেশে ন্যায়বিচার প্রাপ্তিকে আরও দ্রুত, সহজ, সাশ্রয়ী এবং অন্তর্ভুক্তিমূলক করে তুলতে পারে।",
+      en: "The main idea is that digital legal aid can make access to justice in Bangladesh faster, easier, more affordable, and more inclusive, while complementing traditional legal services."
     },
     body: {
-      bn: `<p>বিতর্কে হেরে যাওয়ার সবচেয়ে সাধারণ কারণ দুর্বল কণ্ঠ নয়, অসম্পূর্ণ যুক্তি। বেশিরভাগ শিক্ষার্থী দাবি বলেন, কিন্তু কারণ ও প্রভাব বলতে ভুলে যান।</p>
-<h2>১. দাবি</h2><p>আপনি আসলে কী বলছেন, এক বাক্যে। অস্পষ্ট দাবি মানেই পুরো যুক্তি অস্পষ্ট।</p>
-<h2>২. কারণ</h2><p>দাবিটি কেন সত্য—কোন যুক্তিসংগত ধাপে আপনি সেখানে পৌঁছালেন।</p>
-<h2>৩. প্রমাণ</h2><p>উদাহরণ, তথ্য বা বাস্তব অভিজ্ঞতা। একটি নির্দিষ্ট উদাহরণ দশটি সাধারণ কথার চেয়ে শক্তিশালী।</p>
-<h2>৪. প্রভাব</h2><p>এটি সত্য হলে কার কী পরিবর্তন হয়। এই অংশটাই বিচারকের মনে থাকে।</p>
-<blockquote>যে যুক্তির প্রভাব নেই, সেটি শুধু একটি তথ্য।</blockquote>
-<p>অনুশীলন: আজকের খবরের একটি বিষয় নিন, চার ধাপে চারটি বাক্য লিখুন। এক মাস করলে বিতর্কের মঞ্চে আলাদা করে ভাবতে হবে না।</p>`,
-      en: `<p>Debates are rarely lost because of a weak voice. They are lost because an argument is incomplete. Most students state a claim and then forget the reason and the impact.</p>
-<h2>1. Claim</h2><p>What you are actually saying, in one sentence. A vague claim makes everything after it vague.</p>
-<h2>2. Reason</h2><p>Why it is true — the logical step that took you there.</p>
-<h2>3. Evidence</h2><p>An example, a figure, a real experience. One specific case beats ten general statements.</p>
-<h2>4. Impact</h2><p>What changes, and for whom, if this is true. This is the part an adjudicator remembers.</p>
-<blockquote>An argument without impact is just a fact.</blockquote>
-<p>Practice: take one item from today's news and write four sentences, one for each part. Do it for a month and you will stop having to think about it on stage.</p>`
+      bn: `<p><b>বিজাতীয় বা অসভ্য সমাজে নয়, আইনের শাসন ও সুবিচার হলো একটি সভ্য সমাজের অন্যতম মৌলিক ভিত্তি।</b> অথচ বাস্তবে, সকলের জন্য ন্যায়বিচার পাওয়া আজও বেশ দুরূহ। আমাদের দেশে একজন গরিব মানুষ, দূরদূরান্তের জনপদে বসবাসকারী প্রান্তিক মানুষ, পারিবারিক সহিংসতার শিকার নারী, সীমিত আয়ের খেটে খাওয়া মানুষ কিংবা জটিল আইনি প্রক্রিয়া বুঝতে অক্ষম সাধারণ নাগরিকের জন্য সঠিক আইনি সহায়তা পাওয়া এক প্রকার সংগ্রামের শামিল। আইন হয়তো কাগজে-কলমে সবাইকে সমান অধিকার দেয়, কিন্তু <i>অধিকার থাকা আর সেই অধিকার প্রয়োগ করতে পারা—দুটি সম্পূর্ণ ভিন্ন বিষয়।</i></p>
+
+<p>আর এখানেই <b>আইনি সহায়তার প্রকৃত গুরুত্ব নিহিত।</b> আইনি সহায়তা বলতে মূলত সেই সমস্ত মানুষকে আইনি পরামর্শ, সহযোগিতা ও আইনি প্রতিনিধিত্ব প্রদানকে বোঝায়, যারা আর্থিকভাবে অসচ্ছল বা আইনি সেবার নাগাল পান না। এমনকি বাংলাদেশের সুপ্রিম কোর্টও আইনি সহায়তা বলতে আদালত অঙ্গনের ভেতর ও বাইরে সেই সমস্ত মানুষের জন্য আইনি পরামর্শ ও সহায়তাকে বুঝিয়েছে, যাঁদের আইনি লড়াই চালানোর সামর্থ্য নেই।</p>
+
+<p>কিন্তু বর্তমান যুগে কেবল সনাতন বা প্রথাগত আইনি সহায়তা দিয়ে আর কূল পাওয়া যাচ্ছে না। বাংলাদেশ আজ দ্রুত পরিবর্তনশীল; এখানকার মানুষ এখন মোবাইল ফোন, ইন্টারনেট ও ডিজিটাল মাধ্যমের ওপর আগের চেয়ে অনেক বেশি নির্ভরশীল। তাই আইনি সেবাকেও অবধারিতভাবেই ডিজিটাল যুগে প্রবেশ করতে হবে। ডিজিটাল আইনি সহায়তার মাধ্যমে আইনি তথ্য ও সরকারি সহায়তা সাধারণ মানুষের আরও কাছাকাছি পৌঁছে দেওয়া সম্ভব, বিশেষ করে যাঁরা আদালত বা আইনি সহায়তা অফিস থেকে বহু দূরে বসবাস করেন।</p>
+
+<p><b>সাংবিধানিক প্রতিশ্রুতি ও আমাদের বর্তমান বাস্তবতা</b><br>
+আইনি সহায়তার ধারণাটি সরাসরি বাংলাদেশের সংবিধানের সঙ্গে ওতপ্রোতভাবে জড়িত। সংবিধানের <b>২৭ অনুচ্ছেদে</b> স্পষ্ট বলা হয়েছে যে, সকল নাগরিক আইনের দৃষ্টিতে সমান এবং আইনের সমান আশ্রয়ের অধিকারী। <b>৩১ অনুচ্ছেদ</b> আইনের সুরক্ষার অধিকার নিশ্চিত করে, <b>৩২ অনুচ্ছেদ</b> জীবন ও ব্যক্তি স্বাধীনতার অধিকার রক্ষা করে এবং <b>৩৩ অনুচ্ছেদ</b> গ্রেপ্তারকৃত ব্যক্তির পক্ষে আইনজীবীর পরামর্শ ও সুরক্ষার অধিকার প্রদান করে।</p>
+
+<p>তাহলে মূল প্রশ্নটি কেবল এটি নয় যে আমাদের দেশে মানুষের সুরক্ষার জন্য আইন আছে কি না, বরং প্রশ্নটি হলো—একজন সাধারণ নাগরিক কি আদতে সেই আইনগুলো বুঝতে পারেন এবং তাঁর অধিকার লঙ্ঘিত হলে আইনি প্রতিকার পান? কোনো দরিদ্র কৃষক যদি জানেন যে তাঁর আইনি অধিকার আছে, কিন্তু তিনি জানেন না কোথায় যেতে হবে, তবে সেই অধিকার তাঁর কোনো কাজেই আসে না। <b>ডিজিটাল আইনি সহায়তা এই ব্যবধান দূর করতে কার্যকর ভূমিকা রাখতে পারে।</b></p>
+
+<p>আমাদের বিচারব্যবস্থার বর্তমান অবস্থাও এই তাগিদকে আরও জোরালো করে তোলে। আইনমন্ত্রীর সংসদে দেওয়া তথ্য অনুযায়ী, <b>২০২৬ সালের ৩১ মার্চ পর্যন্ত দেশের বিভিন্ন স্তরের আদালতে প্রায় ৪৬ লক্ষ ৩৯ হাজার ৪৭৬টি মামলা বিচারাধীন ছিল।</b> এর মধ্যে সিংহভাগ মামলাই নিম্ন আদালতে ঝুলে আছে। এই পরিসংখ্যান প্রমাণ করে যে ন্যায়বিচার প্রাপ্তি কেবল আদালত ভবনের উপস্থিতির ওপর নির্ভর করে না; মানুষের প্রয়োজন এমন একটি ব্যবস্থা যা তাদের আইনি সমস্যা বুঝতে, সঠিক পথ বেছে নিতে এবং প্রাথমিক সহায়তা পেতে সাহায্য করে।</p>
+
+<p><b>সামনে এগিয়ে যাওয়ার পথে অর্জন ও প্রতিবন্ধকতা</b><br>
+সৌভাগ্যবশত, বাংলাদেশ ইতোমধ্যে ডিজিটাল আইনি সহায়তার পথে পা বাড়িয়েছে। জাতিসংঘ উন্নয়ন কর্মসূচি (UNDP) এবং ইউরোপীয় ইউনিয়নের সহযোগিতায় <b>জাতীয় আইনগত সহায়তা প্রদান সংস্থা (NLASO)</b> গত ২০২৫ সালের আগস্ট মাসে 'ডিজিটাল লিগ্যাল এইড প্রজেক্ট' চালু করেছে। পরবর্তীতে ২০২৬ সালের জানুয়ারিতে ইউএনডিপি জানায় যে, আটটি জেলায় পাইলট প্রকল্পের মাধ্যমে ডিজিটাল আইনি সেবা চালুর উদ্যোগ নেওয়া হয়েছে।</p>
+
+<p>এই আধুনিক ব্যবস্থার সুফলগুলো স্পষ্ট:<br>
+* <b>দূরত্ব ঘুচিয়ে দেওয়া:</b> প্রত্যন্ত অঞ্চলের মানুষ এখন আর দপ্তরে ঘুরে সময় নষ্ট না করে ঘরে বসেই আবেদন করতে পারবেন।<br>
+* <b>সময় ও অর্থের সাশ্রয়:</b> যাতায়াত খরচ ও প্রতিদিনের কর্মঘণ্টা নষ্ট না করে মোবাইল বা অনলাইন প্ল্যাটফর্মেই বিভিন্ন আপডেট ও স্ট্যাটাস জানা সম্ভব।<br>
+* <b>আইন সহজবোধ্য করা:</b> সাধারণ বাংলায় আইনি তথ্য থাকায় সাধারণ মানুষ দালাল বা মধ্যস্বত্বভোগীদের খপ্পর থেকে রক্ষা পাবেন।<br>
+* <b>স্বচ্ছতা বৃদ্ধি:</b> ডিজিটাল ট্র্যাকিং ও অনলাইন আবেদনের কারণে পুরো প্রক্রিয়াটিতে স্বচ্ছতা ও জবাবদিহিতা নিশ্চিত হয়।</p>
+
+<p>তবে আমাদের বাস্তববাদী হতে হবে। ডিজিটাল বৈষম্য এখনো আমাদের সমাজের একটি বড় সত্য। বাংলাদেশ পরিসংখ্যান ব্যুরোর (BBS) তথ্য অনুযায়ী, ইন্টারনেট ব্যবহার ও স্মার্টফোন মালিকানার হার বাড়লেও এখনো একটি উল্লেখযোগ্য অংশের মানুষের কাছে ব্যক্তিগত ডিজিটাল মাধ্যম বা নিরবচ্ছিন্ন ইন্টারনেট নেই। <i>সুতরাং, সবকিছু রাতারাতি কেবল অনলাইনে সীমাবদ্ধ করে ফেললে নতুন এক ধরনের বৈষম্যের জন্ম হতে পারে।</i></p>
+
+<p><b>একটি সামঞ্জস্যপূর্ণ সংকর বা হাইব্রিড ব্যবস্থা</b><br>
+ডিজিটাল আইনি সহায়তা সফল করতে হলে আমাদের একটি সুচিন্তিত হাইব্রিড মডেল বা সংকর ব্যবস্থার দিকে যেতে হবে। ডিজিটাল প্ল্যাটফর্ম, মোবাইল অ্যাপ এবং জাতীয় হেল্পলাইন <b>(১৬৬৯৯)</b> যেমন সচল থাকবে, তেমনি মাঠপর্যায়ে শারীরিক অফিস, হেল্প ডেস্ক এবং স্থানীয় সহায়তা কেন্দ্রগুলোর কার্যক্রমও সমানতালে চালিয়ে যেতে হবে। পাশাপাশি, অত্যন্ত সংবেদনশীল আইনি তথ্যের সুরক্ষায় কড়া সাইবার নিরাপত্তা ও ডেটা প্রাইভেসির বিষয়টি নিশ্চিত করতে হবে।</p>
+
+<p>পরিশেষে বলা যায়, <b>ডিজিটাল আইনি সহায়তা কোনো প্রযুক্তিগত চমক বা আইনজীবীদের বিকল্প নয়;</b> বরং প্রযুক্তিকে মাধ্যম বানিয়ে আইন ও ন্যায়বিচারকে সাধারণ মানুষের দুয়ারে পৌঁছে দেওয়ার এক মহৎ প্রয়াস। যদি এই প্রযুক্তি একজন মানুষকেও তার অধিকার বোঝাতে পারে, কোনো ভুক্তভোগীকে সঠিক আইনজীবীর শরণাপন্ন করতে পারে কিংবা অযথা হয়রানি কমাতে পারে, তবেই এর সার্থকতা প্রমাণিত হয়।</p>`,
+      en: `<p><b>Justice is one of the basic needs of a civilized society.</b> Yet, in reality, getting justice is not always easy for everyone. In Bangladesh, a poor person, someone living in a remote area, a woman facing violence, a worker with limited income, or an ordinary citizen who does not understand legal procedures often finds it very difficult to get proper legal help. The law may guarantee everyone equal rights, but <i>having a right and being able to use that right are not the same thing.</i></p>
+
+<p>This is where <b>legal aid becomes vital</b>. Legal aid means providing legal advice, assistance, and representation to people who cannot afford or access legal services. The Supreme Court of Bangladesh defines it as assistance in legal matters, both inside and outside the courts, for those unable to afford representation.</p>
+
+<p>However, traditional legal aid alone is no longer enough. As Bangladesh changes rapidly and citizens become increasingly dependent on mobile phones, internet services, and digital platforms, our legal aid framework must enter the digital age. Doing so can make legal information and government services far easier to reach, especially for those living far away from courts and legal offices.</p>
+
+<p><b>The Constitutional Promise and the Present Reality</b><br>
+The concept of legal aid is deeply rooted in the <b>Constitution of Bangladesh</b>. Article 27 guarantees that all citizens are equal before the law and entitled to equal protection. Article 31 recognizes the right to protection of law, while Article 32 protects life and personal liberty, and Article 33 provides crucial safeguards for arrested persons.</p>
+
+<p>The real question, therefore, is not whether we have laws protecting people, but whether an ordinary citizen can actually understand those laws and receive help when their rights are violated. If a poor farmer knows he has a legal right but doesn't know where to go, that right remains on paper. <b>Digital legal aid bridges this crucial gap.</b></p>
+
+<p>The urgency is further highlighted by the state of our judiciary. According to data shared in Parliament by the Law Minister, <b>over 46.39 lakh cases were pending</b> before different levels of the judiciary as of March 2026, with the vast majority stuck in the lower courts. While digital legal aid cannot replace judges or physical courts, it can reduce unnecessary administrative pressure by making the earliest stages of legal assistance faster and more accessible.</p>
+
+<p><b>Moving Forward: Steps and Challenges</b><br>
+Fortunately, Bangladesh is already taking proactive steps. The <b>National Legal Aid Services Organisation (NLASO)</b>, with support from the UNDP and the European Union, launched a Digital Legal Aid Project to expand access to justice. Pilot projects in eight districts, along with the official <b>DBLA Legal Aid mobile application</b>, are introducing services like online case tracking, document uploading, and virtual mediation.</p>
+
+<p>The benefits are clear:<br>
+* <b>Reducing Distance:</b> Citizens from rural or remote areas can seek information or submit applications without making expensive, time-consuming journeys to the city.<br>
+* <b>Saving Time and Money:</b> Simple updates and application tracking can be handled digitally, sparing daily wage earners from losing income over administrative inquiries.<br>
+* <b>Simplifying the Law:</b> Providing answers to common legal questions in simple Bangla prevents vulnerable citizens from falling prey to middlemen.<br>
+* <b>Enhancing Transparency:</b> Digital tracking creates a reliable record, making legal aid administration more accountable and strengthening <i>Alternative Dispute Resolution (ADR)</i> like virtual mediation.</p>
+
+<p>At the same time, we must remain realistic. Bangladesh still faces a digital divide—while smartphone ownership is growing, not everyone has private internet access. <i>A purely digital-only system would create a new form of inequality.</i></p>
+
+<p><b>A Hybrid Path Forward</b><br>
+For digital legal aid to truly succeed, it must be part of a thoughtful hybrid system. Digital platforms, mobile apps, and the national legal-aid helpline <b>(16699)</b> must work hand-in-hand with physical offices, telephone helplines, and local support centers. Furthermore, strict cybersecurity and data protection measures are essential to safeguard sensitive personal information.</p>
+
+<p>Ultimately, <b>digital legal aid is not about replacing lawyers with technology;</b> it is about using technology to bring legal services closer to ordinary people. If technology can help even one person understand a right, connect with a lawyer, or resolve a dispute without unnecessary hardship, it fulfills its purpose. For Bangladesh, digital legal aid is a practical, essential step toward making the constitutional promise of equal protection of law a living reality.</p>`
     }
   },
   {
