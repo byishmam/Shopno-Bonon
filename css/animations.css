@@ -1,0 +1,406 @@
+/* ============================================================
+   animations.css — motion system
+   Rewritten for a slower, heavier, "premium editorial" feel:
+   long eases, real depth, orchestrated entrances, no bounce.
+   All motion collapses safely when the visitor has
+   "reduce motion" turned on (see the last block of this file).
+   ============================================================ */
+
+:root {
+  /* One expressive ease used everywhere, so the whole site moves
+     with the same personality. EDIT these to retune the feel. */
+  --ease-silk:  cubic-bezier(.22, 1, .28, 1);      /* entrances   */
+  --ease-glide: cubic-bezier(.65, .02, .18, 1);    /* transforms  */
+  --ease-soft:  cubic-bezier(.33, 1, .46, 1);      /* hovers      */
+  --dur-enter: 1.15s;
+  --dur-hover: .55s;
+  --stagger: 90ms;
+}
+
+/* ============================================================
+   1. PAGE ENTRANCE
+   The whole page lifts in once, so the first paint never snaps.
+   ============================================================ */
+body { animation: pageIn .9s var(--ease-silk) both; }
+@keyframes pageIn {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ============================================================
+   2. SCROLL REVEAL
+   A lift + a very slight scale + a short blur. The blur is what
+   makes it read as "expensive" rather than as a plain fade.
+   ============================================================ */
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0) scale(.985);
+  filter: blur(10px);
+  transition:
+    opacity     var(--dur-enter) var(--ease-silk),
+    transform   var(--dur-enter) var(--ease-silk),
+    filter      calc(var(--dur-enter) * .8) var(--ease-silk);
+  will-change: opacity, transform, filter;
+}
+[data-reveal="fade"]  { transform: none; }
+[data-reveal="left"]  { transform: translate3d(-40px, 0, 0); }
+[data-reveal="right"] { transform: translate3d(40px, 0, 0); }
+[data-reveal="scale"] { transform: scale(.94); filter: blur(14px); }
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+/* Staggered children — js/main.js sets --i on each child, so the
+   stagger keeps working no matter how many cards are rendered. */
+[data-reveal-group] > * {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0) scale(.99);
+  filter: blur(8px);
+  transition:
+    opacity     var(--dur-enter) var(--ease-silk),
+    transform   var(--dur-enter) var(--ease-silk),
+    filter      calc(var(--dur-enter) * .75) var(--ease-silk);
+}
+[data-reveal-group].is-visible > * {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+  transition-delay: calc(var(--i, 0) * var(--stagger));
+}
+
+/* ============================================================
+   3. IMAGE MASK REVEAL
+   The frame opens upward while the picture inside settles back
+   from a slow push-in. Two speeds = depth.
+   ============================================================ */
+.mask-reveal {
+  clip-path: inset(0 0 0 0 round var(--radius-m));
+  transition: clip-path 1.5s var(--ease-silk);
+}
+
+.mask-reveal img {
+  transform: scale(1.16);
+  transition: transform 2.1s var(--ease-silk);
+}
+.mask-reveal.is-visible img { transform: scale(1); }
+
+/* ============================================================
+   4. HERO — the one orchestrated moment on the site
+   ============================================================ */
+
+/* Headline: each line rides up out of its own mask. */
+.hero-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: .08em;   /* room for descenders inside the mask */
+}
+.hero-line > span {
+  display: block;
+  transform: translate3d(0, 110%, 0) skewY(4deg);
+  animation: lineUp 1.5s var(--ease-silk) both;
+  animation-delay: .22s;
+}
+.hero-line:nth-of-type(2) > span { animation-delay: .34s; }
+.hero-line:nth-of-type(3) > span { animation-delay: .46s; }
+@keyframes lineUp {
+  to { transform: translate3d(0, 0, 0) skewY(0); }
+}
+
+/* A light sweeps across the headline once, a beat after it lands.
+   Guarded by @supports so the text can never end up invisible. */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .display {
+    background-image: linear-gradient(
+      100deg,
+      currentColor 0%, currentColor 38%,
+      var(--accent) 50%,
+      currentColor 62%, currentColor 100%);
+    background-size: 260% 100%;
+    background-position: 130% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: sheen 2.6s var(--ease-glide) 1.25s both;
+  }
+}
+@keyframes sheen {
+  0%   { background-position: 130% 0; }
+  100% { background-position: -40% 0; }
+}
+
+/* Everything else in the hero fades up on a staggered clock. */
+.hero-fade { opacity: 0; animation: heroFade 1.25s var(--ease-silk) both; }
+.hero-kicker.hero-fade  { animation-delay: .08s; }
+.hero-sub.hero-fade     { animation-delay: .58s; }
+.hero-actions.hero-fade { animation-delay: .72s; }
+.motto.hero-fade        { animation-delay: .88s; }
+@keyframes heroFade {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); filter: blur(9px); }
+  to   { opacity: 1; transform: none; filter: blur(0); }
+}
+
+/* The live dot in the kicker breathes. */
+.hero-kicker .dot {
+  animation: pulse 2.8s var(--ease-soft) infinite;
+  box-shadow: 0 0 0 0 var(--accent);
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent-soft); opacity: 1; }
+  50%      { box-shadow: 0 0 0 7px transparent;      opacity: .55; }
+}
+
+/* ---------- Hero background weave ---------------------------
+   The threads draw themselves in, then drift forever. This is
+   the "woven dream" the name refers to, so it is the one piece
+   of looping motion on the page.                               */
+.weave path {
+  stroke-dasharray: 2600;
+  stroke-dashoffset: 2600;
+  animation:
+    draw 3.4s var(--ease-silk) forwards,
+    drift 22s ease-in-out 3.4s infinite;
+}
+.weave path:nth-child(2) { animation-delay: .22s, 3.62s; }
+.weave path:nth-child(3) { animation-delay: .44s, 3.84s; }
+.weave path:nth-child(4) { animation-delay: .66s, 4.06s; }
+@keyframes draw  { to { stroke-dashoffset: 0; } }
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50%      { transform: translate3d(0, -14px, 0); }
+}
+
+/* A soft aurora sits behind the hero and moves very slowly. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -25% -10% auto -10%;
+  height: 130%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(48% 42% at 18% 26%, var(--accent-soft), transparent 68%),
+    radial-gradient(42% 38% at 82% 12%, var(--accent-soft), transparent 70%);
+  filter: blur(26px);
+  opacity: 0;
+  animation: auroraIn 2.4s var(--ease-silk) .1s forwards, aurora 28s ease-in-out 2.4s infinite;
+}
+@keyframes auroraIn { to { opacity: 1; } }
+@keyframes aurora {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33%      { transform: translate3d(3%, -2%, 0) scale(1.07); }
+  66%      { transform: translate3d(-3%, 2%, 0) scale(1.03); }
+}
+
+/* ============================================================
+   5. HOVER MOTION
+   ============================================================ */
+
+/* Cards lift, deepen, and pick up a cursor-following highlight.
+   js/main.js writes --gx / --gy as the pointer moves. */
+.card, .member, .skill, .cta-panel {
+  position: relative;
+  transition:
+    transform   var(--dur-hover) var(--ease-soft),
+    box-shadow  var(--dur-hover) var(--ease-soft),
+    border-color var(--dur-hover) var(--ease-soft);
+}
+.card::after, .member::after, .skill::after, .cta-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--dur-hover) var(--ease-soft);
+  background: radial-gradient(
+    22rem 22rem at var(--gx, 50%) var(--gy, 0%),
+    var(--accent-soft), transparent 62%);
+}
+.card:hover::after, .member:hover::after,
+.skill:hover::after, .cta-panel:hover::after { opacity: 1; }
+
+.card:hover, .member:hover {
+  transform: translate3d(0, -7px, 0);
+  box-shadow: var(--shadow-lg);
+}
+.card:hover .card-media img,
+.member:hover .member-media img { transform: scale(1.07); }
+.card-media img, .member-media img {
+  transition: transform 1.3s var(--ease-silk);
+}
+
+/* Buttons: a sheen crosses on hover, and they lean toward the
+   pointer (js/main.js sets --mx / --my). */
+.btn, .icon-btn {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(var(--mx, 0), var(--my, 0), 0);
+  transition:
+    transform  .45s var(--ease-soft),
+    background-color .35s var(--ease-soft),
+    border-color .35s var(--ease-soft),
+    box-shadow .45s var(--ease-soft);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%) skewX(-18deg);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
+  transition: transform .85s var(--ease-glide);
+  pointer-events: none;
+}
+.btn:hover::before { transform: translateX(120%) skewX(-18deg); }
+.btn:hover { box-shadow: 0 10px 30px -12px var(--accent); }
+.btn:active, .icon-btn:active { transform: scale(.97); transition-duration: .1s; }
+.btn .arrow { transition: transform .5s var(--ease-soft); }
+.btn:hover .arrow { transform: translateX(5px); }
+
+/* Underlined links wipe in from the left. */
+.link-underline { position: relative; }
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -2px;
+  height: 1.5px; width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .6s var(--ease-glide);
+}
+.link-underline:hover::after { transform: scaleX(1); transform-origin: left; }
+
+/* Nav links get the same wipe, in the accent colour. */
+.nav-links a { position: relative; }
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 10px; right: 10px; bottom: 6px;
+  height: 1.5px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s var(--ease-glide);
+}
+.nav-links a:hover::after,
+.nav-links a[aria-current="page"]::after { transform: scaleX(1); transform-origin: left; }
+
+/* Skill rules grow; topic chips lift. */
+.skill:hover .s-mark { width: 46px; }
+.topic-chip { transition: transform .4s var(--ease-soft), background-color .4s var(--ease-soft), color .4s var(--ease-soft), border-color .4s var(--ease-soft); }
+.topic-chip:hover { transform: translate3d(0, -3px, 0); }
+
+/* ============================================================
+   6. READING PROGRESS BAR (article pages, built by main.js)
+   ============================================================ */
+.read-progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  z-index: 120;
+  pointer-events: none;
+}
+.read-progress > i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent) 60%, var(--text-primary));
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* ============================================================
+   7. HEADER & MOBILE NAV
+   ============================================================ */
+.site-header {
+  transition:
+    height .6s var(--ease-silk),
+    background-color .6s var(--ease-soft),
+    border-color .6s var(--ease-soft),
+    box-shadow .6s var(--ease-soft),
+    backdrop-filter .6s var(--ease-soft);
+}
+.site-header.is-stuck { box-shadow: 0 1px 0 var(--border), 0 12px 28px -24px rgba(0,0,0,.5); }
+
+.mobile-nav li {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity .7s var(--ease-silk), transform .7s var(--ease-silk);
+}
+.mobile-nav.open li { opacity: 1; transform: none; }
+.mobile-nav.open li:nth-child(1) { transition-delay: .10s; }
+.mobile-nav.open li:nth-child(2) { transition-delay: .16s; }
+.mobile-nav.open li:nth-child(3) { transition-delay: .22s; }
+.mobile-nav.open li:nth-child(4) { transition-delay: .28s; }
+.mobile-nav.open li:nth-child(5) { transition-delay: .34s; }
+.mobile-nav.open li:nth-child(6) { transition-delay: .40s; }
+.mobile-nav.open li:nth-child(7) { transition-delay: .46s; }
+
+/* ============================================================
+   8. MODAL
+   ============================================================ */
+.modal-backdrop { transition: opacity .5s var(--ease-soft), visibility .5s; }
+.modal {
+  transform: translate3d(0, 26px, 0) scale(.97);
+  transition: transform .7s var(--ease-silk), opacity .5s var(--ease-soft);
+}
+.modal-backdrop.open .modal { transform: none; }
+
+/* ============================================================
+   9. PARALLAX HELPER (js/main.js writes --p)
+   ============================================================ */
+[data-parallax] { will-change: transform; transform: translate3d(0, var(--p, 0px), 0); }
+
+/* ============================================================
+   10. REDUCED MOTION / LOW POWER
+   Everything above collapses to a plain, instant layout.
+   ============================================================ */
+html.reduce-motion *,
+html.low-power * {
+  animation-duration: .001ms !important;
+  animation-delay: 0ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: .14s !important;
+  transition-delay: 0ms !important;
+}
+html.reduce-motion [data-reveal],
+html.reduce-motion [data-reveal-group] > *,
+html.low-power [data-reveal],
+html.low-power [data-reveal-group] > * {
+  opacity: 1 !important; transform: none !important; filter: none !important;
+}
+html.reduce-motion .mask-reveal,
+html.low-power .mask-reveal { clip-path: none !important; }
+html.reduce-motion .mask-reveal img,
+html.low-power .mask-reveal img { transform: none !important; }
+html.reduce-motion .hero-line > span,
+html.low-power .hero-line > span { transform: none !important; }
+html.reduce-motion .hero-fade,
+html.low-power .hero-fade { opacity: 1 !important; }
+html.reduce-motion .display { -webkit-text-fill-color: currentColor !important; }
+html.reduce-motion .weave path,
+html.low-power .weave path { stroke-dashoffset: 0 !important; animation: none !important; }
+html.reduce-motion .hero::before,
+html.low-power .hero::before { animation: none !important; opacity: 1 !important; }
+html.reduce-motion .display,
+html.low-power .display { background-image: none !important; animation: none !important; -webkit-text-fill-color: currentColor !important; }
+html.low-power .card::after, html.low-power .member::after,
+html.low-power .skill::after, html.low-power .cta-panel::after { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .14s !important;
+    transition-delay: 0ms !important;
+  }
+  [data-reveal], [data-reveal-group] > * { opacity: 1 !important; transform: none !important; filter: none !important; }
+  .hero-line > span { transform: none !important; }
+  .hero-fade, html:not(.page-in) body { opacity: 1 !important; }
+  .mask-reveal { clip-path: none !important; }
+  .mask-reveal img { transform: none !important; }
+  .weave path { stroke-dashoffset: 0 !important; }
+  .display { background-image: none !important; -webkit-text-fill-color: currentColor !important; }
+}
