@@ -372,7 +372,7 @@ window.ARTICLES = [
     }
   },
   {
-    id: "argument-structure",
+    id: "one-click-closer-to-justice",
     featured: false,
     category: "opinion",
     cover: "assets/images/cover-2.png",
