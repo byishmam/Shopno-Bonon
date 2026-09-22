@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- EDIT: page title and description (SEO) -->
+<title>লেখা · Article — স্বপ্নবুনন Shopno Bonon</title>
+<meta name="description" content="An article from Shopno Bonon.">
+<meta name="theme-color" content="#FBFAF8">
+<link rel="canonical" href="./article.html">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="লেখা · Article — স্বপ্নবুনন Shopno Bonon">
+<meta property="og:description" content="An article from Shopno Bonon.">
+<meta property="og:image" content="assets/images/og-image.svg">
+<meta property="og:site_name" content="Shopno Bonon">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+
+<!-- Bangla typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- Applies the saved theme + language before the page paints (no flash) -->
+<script>
+(function(){try{
+  var t=localStorage.getItem('sb-theme')||'system';
+  var dark=t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+  var l=localStorage.getItem('sb-lang')||'en';
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.setAttribute('lang',l);
+}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-bn="মূল কনটেন্টে যান" data-en="Skip to content">মূল কনটেন্টে যান</a>
+
+<!-- Header is built by js/main.js from js/config.js -->
+<header id="site-header"></header>
+
+<main id="main">
+<!-- The article is rendered by js/articles.js from the id in the URL:
+     article.html?id=stage-fear  →  the item with id "stage-fear" in js/data.js -->
+<div id="article-root"></div>
+
+</main>
+
+<!-- Footer is built by js/main.js from js/config.js -->
+<footer id="site-footer"></footer>
+
+<script src="js/config.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/language.js" defer></script>
+<script src="js/theme.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/pdf.js" defer></script>
+<script src="js/share.js" defer></script>
+<script src="js/articles.js" defer></script>
+
+</body>
+</html>
