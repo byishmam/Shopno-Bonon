@@ -179,9 +179,9 @@ window.FOUNDERS = [
     social: { facebook: "https://www.facebook.com/rihhal.ishmam/", linkedin: "https://www.linkedin.com/in/byishmam/", email: "mailto:ishmam.on@gmail.com" }
   },
   {
-    name: { bn: "রেদওয়ান নওশাদ", en: "Redwan Nowshad" },
+    name: { bn: "তোহফা চৌধুরী", en: "Tuhfa Chowdhury" },
     role: { bn: "সহ-প্রতিষ্ঠাতা", en: "Co-founder" },
-    photo: "assets/images/avatar-2.png",
+    photo: "assets/images/avatar-2.svg",
     bio: {
       bn: "লেখালেখি ও স্টোরিটেলিং কর্মশালাগুলো পরিচালনা করেন।",
       en: "Runs the writing and storytelling workshops."
@@ -189,7 +189,7 @@ window.FOUNDERS = [
     quote: { bn: "ভালো গল্প মানে সৎ গল্প।", en: "A good story is an honest one." },
     expertise: { bn: ["স্টোরিটেলিং", "গবেষণা"], en: ["Storytelling", "Research"] },
     achievement: { bn: "৪০+ প্রকাশিত ফিচার", en: "40+ published features" },
-    social: { facebook: "https://www.facebook.com/redwannowshadoffical", instagram: "https://www.instagram.com/dude_redu", email: "" }
+    social: { facebook: "", instagram: "", email: "" }
   },
   {
     name: { bn: "মোঃ আরিফুল ইসলাম মারুফ", en: "MD. Ariful Islam Maruf" },
@@ -203,6 +203,19 @@ window.FOUNDERS = [
     expertise: { bn: ["গবেষণা", "সম্পাদনা"], en: ["Research", "Editing"] },
     achievement: { bn: "ক্যাম্পাস অ্যাওয়্যারনেস ক্যাম্পেইন সংগঠক", en: "Organiser, campus awareness campaigns" },
     social: { facebook: "https://www.facebook.com/profile.php?id=61591979730643", linkedin: "https://www.linkedin.com/in/maruf-on/", email: "" }
+  },
+  {
+    name: { bn: "আনিকা হাসনাত তাহসিন", en: "Anika Hasnat Tahsin" },
+    role: { bn: "সহ-প্রতিষ্ঠাতা", en: "Co-founder" },
+    photo: "assets/images/avatar-4.svg",
+    bio: {
+      bn: "সামাজিক সচেতনতা বিভাগের পরিকল্পনা ও তথ্য যাচাইয়ের দায়িত্বে।",
+      en: "Plans and fact-checks the social awareness desk."
+    },
+    quote: { bn: "আগে যাচাই, তারপর প্রকাশ।", en: "Check it first, publish it second." },
+    expertise: { bn: ["আর্টস", "সম্পাদনা"], en: ["Arts", "Editing"] },
+    achievement: { bn: "ক্যাম্পাস অ্যাওয়্যারনেস ক্যাম্পেইন সংগঠক", en: "Organiser, campus awareness campaigns" },
+    social: { facebook: "", linkedin: "", email: "" }
   }
 ];
 
@@ -304,15 +317,37 @@ window.ARTICLES = [
     readTime: 7,
     author: "ishmam",
     title: {
-      
+      bn: "বিচারের বিভ্রম: কেন কঠোর আইন বাংলাদেশের ভুক্তভোগীদের বাঁচাতে পারছে না",
       en: "The Illusion of Justice: Why Tougher Laws Aren’t Saving Bangladesh’s Survivors"
     },
     excerpt: {
-      
+      bn: "বাংলাদেশের যৌন সহিংসতা সংকটের মূল কারণ কঠোর আইনের অভাব নয়, বরং দুর্বল প্রয়োগ, পদ্ধতিগত বিলম্ব, সামাজিক কলঙ্ক এবং প্রাতিষ্ঠানিক জবাবদিহিতার অভাব।",
       en: "Bangladesh’s sexual violence crisis stems not from a lack of harsh laws, but from weak enforcement, systemic delays, social stigma, and a lack of institutional accountability."
     },
     body: {
       
+      bn: `<p>বাংলাদেশে যখনই কোনো ভয়াবহ যৌন নিপীড়নের ঘটনা সংবাদমাধ্যমে আসে, তখন প্রায় একই ধরনের প্রতিক্রিয়া দেখা যায়। সামাজিক যোগাযোগমাধ্যমে ক্ষোভ ছড়িয়ে পড়ে, টেলিভিশনের আলোচনায় দ্রুত বিচার ও শাস্তির দাবি ওঠে, রাজনৈতিক নেতারা কঠোর ব্যবস্থা নেওয়ার কথা বলেন এবং অনেকেই সর্বোচ্চ শাস্তির দাবি জানান। কিন্তু কিছুদিন পর যখন মানুষের মনোযোগ অন্যদিকে চলে যায়, তখন ভুক্তভোগীদের অনেকেই এমন একটি <strong>ধীর ও জটিল বিচারব্যবস্থার</strong> মধ্যে পড়ে যান, যেখানে ন্যায়বিচার পাওয়া সহজ নয়। আমাদের আইনে যে কঠোরতার কথা বলা আছে এবং একজন ভুক্তভোগী বাস্তবে যে অভিজ্ঞতার মধ্য দিয়ে যান—এই দুইয়ের মধ্যে বড় একটি <strong>ফারাক</strong> এখনো যৌন সহিংসতার বিরুদ্ধে লড়াইয়ের অন্যতম বড় সমস্যা।</p>
+
+<p>কাগজে-কলমে বাংলাদেশে নারী ও শিশুদের সুরক্ষার জন্য গত কয়েক বছরে অনেক আইন ও ব্যবস্থা নেওয়া হয়েছে। কিন্তু অনেক ভুক্তভোগীর কাছে সেই আইন বাস্তব জীবনে প্রয়োজনীয় ন্যায়বিচার থেকে অনেক দূরের বিষয় বলে মনে হয়। <strong>নারী ও শিশু নির্যাতন দমন আইন, ২০০০</strong>-এর মাধ্যমে বিশেষ ট্রাইব্যুনাল গঠন করা হয়েছিল, যাতে সাধারণ আদালতের দীর্ঘসূত্রতা এড়িয়ে দ্রুত বিচার করা যায় এবং কঠোর শাস্তি নিশ্চিত করা যায়। পরে ২০২০ সালে ব্যাপক জনবিক্ষোভের পর ধর্ষণের সর্বোচ্চ শাস্তি হিসেবে মৃত্যুদণ্ডের বিধান আনা হয়। আইনেও তদন্ত দ্রুত শেষ করা, ডিএনএ পরীক্ষা করা এবং নির্দিষ্ট সময়ের মধ্যে বিচার শেষ করার মতো বিভিন্ন নির্দেশনা রয়েছে।</p>
+
+<p>কিন্তু এখানে একটি গুরুত্বপূর্ণ বিষয় আছে: <strong>শাস্তি যত কঠোরই হোক, একটি ব্যবস্থা যদি ঠিকভাবে কাজ না করে, তাহলে সেই কঠোরতা খুব বেশি কাজে আসে না।</strong> শুধু আইন থাকলেই ন্যায়বিচার নিশ্চিত হয় না। আইন কার্যকর করতে প্রয়োজন সৎ ও দক্ষ প্রতিষ্ঠান, দ্রুত ও সঠিক প্রক্রিয়া এবং মানুষের আস্থা। আর সমস্যাটা মূলত এখানেই।</p>
+
+<p>একজন ভুক্তভোগীর জন্য যৌন নিপীড়নের ঘটনা জানানোর সিদ্ধান্ত নেওয়াই অনেক সময় কঠিন হয়ে পড়ে। সচেতনতা বাড়লেও থানায় গিয়ে অভিযোগ করা এখনো অনেকের কাছে ভয় ও অস্বস্তির বিষয়। অনেক জায়গায় <strong>ভুক্তভোগীকেই দোষ দেওয়ার মানসিকতা</strong> এখনো রয়েছে। একজন নারীর চরিত্র, পোশাক বা আচরণ নিয়ে প্রশ্ন তোলা হয়, অথচ অপরাধীর কাজ নিয়ে যথেষ্ট প্রশ্ন করা হয় না। এই সামাজিক চাপের কারণে অনেক পরিবার ঘটনা প্রকাশ না করে চুপ করে থাকার সিদ্ধান্ত নেয়। তাদের কাছে সামাজিক সম্মান রক্ষা করা অনেক সময় দীর্ঘ ও অনিশ্চিত আইনি লড়াইয়ের চেয়ে সহজ মনে হয়।</p>
+
+<p>কোনো মামলা শেষ পর্যন্ত বিচারব্যবস্থায় গেলেও সমস্যা সেখানেই শেষ হয় না। তদন্তে দেরি হয়, অনেক ক্ষেত্রে শুরুতেই প্রয়োজনীয় আলামত ঠিকভাবে সংগ্রহ করা হয় না। ডিএনএ ও অন্যান্য ফরেনসিক পরীক্ষার সুযোগ আগের তুলনায় বেড়েছে, কিন্তু এখনো এসব সুবিধা দেশের সব জায়গায় সমানভাবে পাওয়া যায় না। বিশেষ করে গ্রাম ও প্রত্যন্ত এলাকার মানুষ এতে বেশি সমস্যায় পড়েন। মামলা দীর্ঘদিন চলতে থাকলে সাক্ষীরা ভয় বা চাপের মুখে পড়তে পারেন, আবার অনেক পরিবারের পক্ষে বারবার আদালতে যাতায়াতের খরচ বহন করাও কঠিন হয়ে যায়। ফলে একটি মামলা শুধু আইনি বিষয় থাকে না; <strong>এটি একটি পরিবারের জন্য দীর্ঘ আর্থিক ও মানসিক চাপের কারণ হয়ে দাঁড়ায়।</strong></p>
+
+<p>দ্রুত বিচার নিশ্চিত করার উদ্দেশ্যে গঠিত বিশেষ ট্রাইব্যুনালগুলোর অনেকগুলোতেও এখন <strong>মামলার বড় জট</strong> তৈরি হয়েছে। বারবার সময় নেওয়া, নানা ধরনের প্রক্রিয়াগত জটিলতা এবং মামলার তুলনায় পর্যাপ্ত বিচারক না থাকা—এসব কারণে নির্ধারিত সময়ের মধ্যে অনেক মামলা শেষ হয় না। ফলে দ্রুত বিচারের যে প্রতিশ্রুতি দেওয়া হয়েছিল, বাস্তবে তা অনেক সময় দীর্ঘ অপেক্ষায় পরিণত হয়।</p>
+
+<p>এই পরিস্থিতি আমাদের আরেকটি বিষয় ভাবতে বাধ্য করে। ধর্ষণের মতো অপরাধের শাস্তি আরও কঠোর করলেই কি অপরাধ কমবে? মৃত্যুদণ্ডের বিধান মানুষের কঠোর শাস্তির দাবি পূরণ করতে পারে, কিন্তু অনেক আইন বিশেষজ্ঞ ও মানবাধিকারকর্মীর মতে, <strong>শাস্তির কঠোরতার চেয়ে অপরাধী যে নিশ্চিতভাবে আইনের আওতায় আসবে—এই নিশ্চয়তা বেশি গুরুত্বপূর্ণ।</strong> যদি তদন্ত দুর্বল হয়, প্রমাণ ঠিকভাবে সংগ্রহ না হয় এবং মামলা বছরের পর বছর আটকে থাকে, তাহলে শুধু সর্বোচ্চ শাস্তি বাড়িয়ে খুব বেশি পরিবর্তন আনা সম্ভব নয়। তাই বাংলাদেশের মূল সমস্যাটি শুধু শাস্তির অভাব নয়; বরং <strong>অপরাধ করে পার পেয়ে যাওয়ার একটি সংস্কৃতি</strong> এখনো বড় সমস্যা।</p>
+
+<p>তবে এসব সমস্যার কথা বলার অর্থ এই নয় যে কোনো অগ্রগতি হয়নি। যৌন সহিংসতা নিয়ে মানুষের সচেতনতা আগের তুলনায় অনেক বেড়েছে। নারী অধিকার সংগঠন, সামাজিক যোগাযোগমাধ্যম এবং সংবাদমাধ্যমের ভূমিকার কারণে এমন অনেক বিষয় সামনে এসেছে, যেগুলো একসময় চেপে রাখা হতো। অনেক ভুক্তভোগী এখন নিজেদের অধিকার নিয়ে কথা বলতে সাহস পাচ্ছেন। সামাজিক কিছু পুরোনো ধারণাও ধীরে ধীরে বদলাচ্ছে। পাশাপাশি <strong>ডিএনএ পরীক্ষার মতো বৈজ্ঞানিক প্রমাণ</strong> অনেক মামলায় সত্য উদঘাটনে গুরুত্বপূর্ণ ভূমিকা রাখছে।</p>
+
+<p>তবে প্রকৃত পরিবর্তন আনতে শুধু নতুন আইন করা বা পুরোনো আইনে শাস্তি বাড়ানো যথেষ্ট নয়। আমাদের বিচারব্যবস্থার বাস্তব সমস্যাগুলো সমাধানে বিনিয়োগ করতে হবে। যৌন সহিংসতার মামলা কীভাবে সংবেদনশীলতার সঙ্গে পরিচালনা করতে হয়, সে বিষয়ে পুলিশ ও তদন্ত কর্মকর্তাদের নিয়মিত প্রশিক্ষণ দিতে হবে। <strong>দেশের প্রতিটি জেলায় আধুনিক ফরেনসিক ও ডিএনএ পরীক্ষার সুবিধা</strong> নিশ্চিত করা দরকার। একই সঙ্গে এমন একটি কার্যকর <strong>সাক্ষী সুরক্ষা ব্যবস্থা</strong> দরকার, যাতে সত্য বলার কারণে কোনো সাক্ষী ভয় বা হুমকির মধ্যে না পড়েন।</p>
+
+<p>সবশেষে, যৌন সহিংসতার সমস্যা শুধু আদালত বা পুলিশের পক্ষে একা সমাধান করা সম্ভব নয়। এর সঙ্গে জড়িয়ে আছে <strong>ক্ষমতার অসমতা, সমাজের প্রচলিত লিঙ্গভিত্তিক ধারণা এবং জবাবদিহিতার অভাব।</strong> তাই দীর্ঘমেয়াদি পরিবর্তনের জন্য আমাদের পরিবার, শিক্ষা প্রতিষ্ঠান ও সমাজ থেকেই কাজ শুরু করতে হবে। সম্মতি কী, তা বুঝতে হবে; নারী-পুরুষের সমান মর্যাদা নিশ্চিত করতে হবে এবং হয়রানিকে স্বাভাবিক ঘটনা হিসেবে মেনে নেওয়ার সংস্কৃতি থেকে বেরিয়ে আসতে হবে।</p>
+
+<p>বাংলাদেশে ন্যায়বিচারের আসল সাফল্য শুধু আইনে কত কঠোর শাস্তির কথা লেখা আছে, তা দিয়ে মাপা যাবে না। বরং প্রশ্ন হলো—একজন সাধারণ মানুষ কি বিপদের সময় রাষ্ট্রের প্রতিষ্ঠানগুলোর ওপর সত্যিই ভরসা করতে পারেন? <strong>আইনে পরিবর্তনের ইচ্ছা আছে; এখন সবচেয়ে জরুরি হলো সেই ইচ্ছাকে বাস্তব কার্যকর ব্যবস্থায় পরিণত করা।</strong> এমন একটি ব্যবস্থা গড়ে তুলতে হবে যেখানে ভুক্তভোগী বিচার চাইতে গিয়ে অপমান নয়, সহানুভূতি পাবেন; বাধা নয়, কার্যকর সহযোগিতা পাবেন; আর খালি প্রতিশ্রুতির বদলে সত্যিকারের জবাবদিহিতা দেখতে পাবেন।</p>`,
+
       en: `<p>Every time a shocking sexual assault makes headlines in Bangladesh, our collective response follows a depressingly familiar script. Social media erupts in fury, television talk shows demand accountability, politicians promise swift retribution and calls for the harshest possible punishments echo across the public square. Yet, once the media spotlight shifts and public outrage cools, the survivors are quieted and left to navigate a legal labyrinth that is painfully slow and deeply flawed. <strong>The vast chasm between the strict laws on our statute books and the lived reality of victims remains one of the most stubborn hurdles in our national fight against sexual violence.</strong></p>
 
 <p>On paper, Bangladesh has spent years strengthening its laws to protect women and children. But for many survivors, those laws can still feel painfully distant from the justice they need. The <strong>Nari o Shishu Nirjatan Daman Ain (Women and Children Repression Prevention Act) of 2000</strong> established specialized tribunals specifically to bypass traditional judicial delays and hand down severe penalties. Later, in 2020, capital punishment was introduced as the maximum penalty for rape following massive nationwide protests. The statutory framework explicitly demands expedited investigations, mandatory DNA testing and strict timelines for concluding trials.</p>
