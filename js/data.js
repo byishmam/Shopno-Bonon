@@ -54,13 +54,13 @@ window.AUTHORS = {
     social: { facebook: "https://www.facebook.com/redwannowshadoffical", instagram: "https://instagram.com/dude_redu", email: "mailto:" }
   },
 
-  tasnia: {
-    name:  { bn: "তাসনিয়া রহমান", en: "Tasnia Rahman" },
-    role:  { bn: "কনটেন্ট লিড, সামাজিক সচেতনতা", en: "Content Lead, Social Awareness" },
-    photo: "assets/images/avatar-3.svg",
+  sayed: {
+    name:  { bn: "মোহাম্মদ শাহরিয়া সাইদ", en: "Mohammad Shaharia Sayed" },
+    role:  { bn: "কলামিস্ট", en: "Columnist" },
+    photo: "assets/images/avatar-4.png",
     bio: {
-      bn: "ডিজিটাল দায়বদ্ধতা ও তরুণদের মানসিক সুস্থতা নিয়ে লেখেন। তথ্য যাচাই করে লিখতে বিশ্বাস করেন।",
-      en: "She writes about digital responsibility and youth wellbeing, and insists on checking a claim before publishing it."
+      bn: "আইন বিষয়ে স্নাতক পর্যায়ের একজন শিক্ষার্থী, যার আইন গবেষণা, আইন বিষয়ক লেখালেখি এবং বিশেষ করে সাংবিধানিক আইনের প্রতি গভীর আগ্রহ রয়েছে। তিনি শুধু আইন কী বলে তা শেখার মধ্যেই সীমাবদ্ধ থাকতে ভালোবাসেন না; তিনি জানতে আগ্রহী যে, আইন কেন বিদ্যমান, আদালত কীভাবে এর ব্যাখ্যা করে এবং বাংলাদেশ ও অন্যান্য দেশে সাংবিধানিক নীতিগুলো কীভাবে বিকশিত হয়েছে। এই কৌতূহলই তাকে গবেষণা, মামলার বিশ্লেষণ এবং অ্যাকাডেমিক লেখার মাধ্যমে আইনগত বিষয়গুলো গভীরভাবে অন্বেষণ করতে অনুপ্রাণিত করেছে। তিনি প্রবন্ধ লেখাকে সেই কৌতূহলকে অর্থবহ আইনগত ধারণায় রূপান্তরিত করার এবং নিজেকে একজন চিন্তাশীল আইন গবেষক ও লেখক হিসেবে গড়ে তোলার একটি উপায় হিসেবে দেখেন।",
+      en: "A undergrad law student with a strong interest in legal research, legal writing, and particularly constitutional law. He enjoys going beyond simply learning what the law says; he is curious about why it exists, how courts interpret it, and how constitutional principles develop in Bangladesh and other countries. This curiosity has inspired him to explore legal issues deeply through research, case analysis, and academic writing. He sees article writing as a way to turn that curiosity into meaningful legal ideas and develop himself as a thoughtful legal researcher and writer."
     },
     quote: {
       bn: "সচেতনতা মানে ভয় ছড়ানো নয়, বোঝা।",
@@ -68,7 +68,7 @@ window.AUTHORS = {
     },
     expertise: { bn: ["সামাজিক সচেতনতা", "গবেষণা", "রিপোর্টিং"], en: ["Social awareness", "Research", "Reporting"] },
     achievement: { bn: "ক্যাম্পাস অ্যাওয়্যারনেস ক্যাম্পেইন সংগঠক", en: "Organiser, campus awareness campaigns" },
-    social: { linkedin: "https://linkedin.com/", x: "https://x.com/", email: "mailto:tasnia@shopnobonon.org" }
+    social: { linkedin: "https://www.linkedin.com/in/sayed-sha-b9b09840b/", x: "", email: "mailto:sayedsha473@gmail.com" }
   },
 
   rafi: {
@@ -480,7 +480,7 @@ For digital legal aid to truly succeed, it must be part of a thoughtful hybrid s
     cover: "assets/images/cover-4.svg",
     date: "2026-04-26",
     readTime: 8,
-    author: "tasnia",
+    author: "",
     title: { bn: "শেয়ার করার আগে ত্রিশ সেকেন্ড", en: "Thirty seconds before you share" },
     excerpt: {
       bn: "ভুল তথ্য ছড়ায় বিশ্বাস থেকে, বিদ্বেষ থেকে নয়। তাই থামাও যায় অভ্যাস দিয়ে।",
@@ -510,33 +510,27 @@ For digital legal aid to truly succeed, it must be part of a thoughtful hybrid s
     }
   },
   {
-    id: "between-classes",
+    id: "judiciary-independence",
     featured: false,
-    category: "student-life",
-    cover: "assets/images/cover-5.svg",
+    category: "opinion",
+    cover: "assets/images/cover-3.png",
     date: "2026-04-15",
     readTime: 5,
-    author: "rafi",
-    title: { bn: "ক্লাসের ফাঁকের সময়টা কোথায় যায়", en: "Where the hours between classes go" },
+    author: "sayed",
+    title: {en: "Is Our Judiciary Really Independent?" },
     excerpt: {
-      bn: "দিনে তিন ঘণ্টা হারিয়ে যায় ছোট ছোট ফাঁকে। সেটা ফিরিয়ে আনার একটি সহজ উপায়।",
-      en: "Three hours a day disappear into small gaps. One simple way to get them back."
+      en: "Bangladesh’s judicial independence remains constrained by executive influence, financial dependence, and political interference, highlighting the need for stronger institutional safeguards and transparent reforms."
     },
     body: {
-      bn: `<p>সারা দিন ব্যস্ত থাকি, অথচ রাতে মনে হয় কিছুই হয়নি—এই অনুভূতি প্রায় প্রতিটি শিক্ষার্থীর।</p>
-<h2>এক সপ্তাহ হিসাব রাখুন</h2>
-<p>কাগজে শুধু লিখুন: কখন কী করছিলেন। বিচার করবেন না, শুধু লিখুন। সপ্তাহ শেষে দেখবেন সময় নষ্ট হচ্ছে বড় কোনো কাজে নয়, দশ-পনেরো মিনিটের ফাঁকগুলোয়।</p>
-<h2>ফাঁকের জন্য আগে থেকে কাজ ঠিক করে রাখুন</h2>
-<ul><li>১৫ মিনিট: একটি পড়া রিভিশন বা একটি অনুচ্ছেদ লেখা।</li><li>৩০ মিনিট: একটি সমস্যার সমাধান বা একটি ইমেইল।</li><li>১ ঘণ্টা: লাইব্রেরি, নতুন কিছু শেখা।</li></ul>
-<blockquote>সময় বাড়ানো যায় না, কিন্তু ফাঁকগুলো আগে থেকে ঠিক করা যায়।</blockquote>
-<p>এটি প্রোডাক্টিভিটি নিয়ে বড় কোনো তত্ত্ব নয়। শুধু নিজের দিনটাকে চেনা।</p>`,
-      en: `<p>Busy all day, and by night it feels like nothing happened. Most students know that feeling.</p>
-<h2>Track one week</h2>
-<p>On paper, write down what you were doing and when. No judgement, just the record. By the end of the week you will see the time is not lost to one big thing. It goes into ten and fifteen minute gaps.</p>
-<h2>Decide what the gaps are for, in advance</h2>
-<ul><li>15 minutes: revise one topic, or write one paragraph.</li><li>30 minutes: solve one problem set, or send the email.</li><li>1 hour: library, or learn something new.</li></ul>
-<blockquote>You cannot add hours. You can decide in advance what the gaps are for.</blockquote>
-<p>This is not a theory about productivity. It is just knowing your own day.</p>`
+      en: `<p><strong>An independent judiciary is the foundational principle that ensures courts function free from external pressures</strong>, particularly from the executive and legislative branches. Bangladesh’s judiciary is often said to fall short of the classic definition of an independent judiciary because of <strong>executive-controlled appointments, lack of financial autonomy, and controversial parliamentary removal powers.</strong></p>
+
+<p>Current <strong>Articles 115 and 116 of the Constitution</strong> empower the President to appoint, post, promote, and remove lower-court officers, thereby creating a real obstacle to meaningful separation. The Supreme Court held that the <strong>Chief Justice's opinion must have primacy over the Executive</strong> in appointments, warning that excluding this would destroy judicial independence and enable the appointment of <strong>"spineless, pliant and submissive persons."</strong></p>
+
+<p>Furthermore, the judiciary lacks <strong>financial independence</strong> entirely, receiving less than 1% of the total national budget — only <strong>0.352% in fiscal year 2019–2020</strong>. This allocation is conspicuously lower than provisions made for state television or the fisheries department. Revenue generated from court fees is deposited directly into the central government fund rather than supporting judicial operations, leaving the judiciary <strong>dependent on whatever the executive allocates.</strong></p>
+
+<p>The <strong>16th Amendment</strong> gave Parliament power to remove Supreme Court judges, a move civil society, jurists, and lawyers opposed as undermining judicial independence. The Constitution has been amended sixteen times, often driven by political interests rather than national welfare, with changing appointment and removal procedures used to <strong>target the Supreme Court and its judges.</strong></p>
+
+<p>The foregoing discussion is sufficient to demonstrate whether the judiciary operates independently in practice or merely enjoys <strong>independence in constitutional theory.</strong> Sustainable reform will require <strong>transparent appointment mechanisms, procedural protections, incremental depoliticisation, and active engagement with professional and civil society actors.</strong></p>`
     }
   },
   {
@@ -546,7 +540,7 @@ For digital legal aid to truly succeed, it must be part of a thoughtful hybrid s
     cover: "assets/images/cover-6.svg",
     date: "2026-04-02",
     readTime: 6,
-    author: "redu",
+    author: "",
     title: { bn: "ভালো বক্তা হওয়ার আগে ভালো শ্রোতা", en: "Before you become a speaker, become a listener" },
     excerpt: {
       bn: "যোগাযোগের অর্ধেকটা বলা, বাকি অর্ধেক শোনা—এবং দ্বিতীয়টাই বেশি কঠিন।",
